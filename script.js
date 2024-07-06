@@ -5,7 +5,7 @@ let todoItem = 0;
 
 
 
-var todos = JSON.parse(localStorage.getItem("todos"))
+var todos = JSON.parse(localStorage.getItem("todos")) || [];
 window.onload = function(){
 	let items = localStorage.getItem("todos")
 	items = JSON.parse(items)
